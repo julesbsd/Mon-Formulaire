@@ -15,7 +15,6 @@
     border: 1px solid #ced4da;
     border-radius: 495057px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
     width: 100%;
     box-sizing: border-box;
 }
@@ -26,12 +25,12 @@
     appearance: none;
     background-color: transparent;
     border: none;
-    font-size: 20px;
+    font-size: 1rem;
     font-family: 'Inter', sans-serif;
     margin-right: 10px;
     padding: 5px 10px;
     outline: none;
-    width: 60%;
+    width: 50%;
     color: #495057;
     margin-left: 20px;
 }
@@ -39,7 +38,7 @@
 
 /* Style du champ de date */
 #appointment-date {
-    font-size: 18px;
+    font-size: 1rem;
     font-family: 'Inter', sans-serif;
     background-color: transparent;
     border: none;
@@ -87,4 +86,21 @@
 /* Style lorsque le champ de date est en focus */
 #appointment-date:focus {
     cursor: text;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #custom-select {
+        margin-top: 0.5rem;
+        font-size: 0.8rem;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #appointment-date {
+       display: none;
+    }
+    .divider {
+        display: none;
+    }
 }
