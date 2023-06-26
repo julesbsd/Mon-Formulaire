@@ -1,0 +1,90 @@
+/* Style de la barre */
+.divider {
+    border-left: 1px solid #000;
+    height: 62px;
+    margin: 0 20px;
+}
+
+
+/* Conteneur du menu déroulant et de l'icône de la loupe */
+/* Conteneur du menu déroulant et de l'icône de la loupe */
+.custom-dropdown {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 495057px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Style du menu déroulant */
+#custom-select {
+    content: "\25BC";
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    margin-right: 10px;
+    padding: 5px 10px;
+    outline: none;
+    width: 60%;
+    color: #495057;
+    margin-left: 20px;
+}
+
+
+/* Style du champ de date */
+#appointment-date {
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    background-color: transparent;
+    border: none;
+    color: #495057;
+    margin-left: 20px;
+    outline: none;
+    width: 30%;
+}
+
+/* Style du bouton avec l'icône de la loupe */
+.search-icon-button {
+    margin-right: -1px;
+    background-color: #f4c20d;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 8px 18px;
+    outline: none;
+    transition: background-color 0.2s;
+}
+
+/* Style de l'icône de la loupe */
+.feather-search {
+    color: #000;
+}
+
+/* Style au survol de l'icône de la loupe */
+.search-icon-button:hover,
+.search-icon-button:focus {
+    background-color: #e4b819;
+}
+
+/* Style au survol de l'icône de la loupe */
+.search-icon-button:hover .feather-search {
+    color: #000;
+    /* Change this to any color you want */
+}
+
+/* Style au survol du champ de date */
+#appointment-date:hover {
+    cursor: pointer;
+}
+
+/* Style lorsque le champ de date est en focus */
+#appointment-date:focus {
+    cursor: text;
+}
